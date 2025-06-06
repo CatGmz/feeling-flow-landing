@@ -28,7 +28,7 @@ const SubscriptionSection = () => {
   };
 
   return (
-    <section className="py-20 px-4 bg-gradient-to-br from-emotional-pink to-emotional-peach">
+    <section className="py-20 px-4 bg-gradient-to-br from-emotional-pink to-emotional-warm">
       <div className="container mx-auto max-w-2xl">
         <Card className="border-none shadow-2xl bg-white/90 backdrop-blur-sm">
           <CardContent className="p-12">

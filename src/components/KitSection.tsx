@@ -18,7 +18,7 @@ const KitSection = () => {
     {
       title: "Scented Candles",
       description: "Soothing aromas to help you slow down and breathe again.",
-      color: "bg-emotional-peach",
+      color: "bg-emotional-warm",
       icon: "🕯️"
     }
   ];

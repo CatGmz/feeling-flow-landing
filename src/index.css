@@ -8,42 +8,42 @@
 @layer base {
   :root {
     --background: 253 248 248;
-    --foreground: 115 97 122;
+    --foreground: 75 65 82;
 
     --card: 255 255 255;
-    --card-foreground: 115 97 122;
+    --card-foreground: 75 65 82;
 
     --popover: 255 255 255;
-    --popover-foreground: 115 97 122;
+    --popover-foreground: 75 65 82;
 
-    --primary: 168 139 173;
+    --primary: 138 113 173;
     --primary-foreground: 255 255 255;
 
-    --secondary: 243 229 245;
-    --secondary-foreground: 115 97 122;
+    --secondary: 233 219 245;
+    --secondary-foreground: 75 65 82;
 
-    --muted: 248 237 249;
-    --muted-foreground: 158 141 164;
+    --muted: 238 227 249;
+    --muted-foreground: 115 105 122;
 
-    --accent: 255 238 226;
-    --accent-foreground: 138 113 99;
+    --accent: 220 195 210;
+    --accent-foreground: 75 65 82;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 239 220 241;
-    --input: 239 220 241;
-    --ring: 168 139 173;
+    --border: 229 210 241;
+    --input: 229 210 241;
+    --ring: 138 113 173;
 
     --radius: 0.75rem;
 
-    /* Custom emotional capacity colors */
-    --emotional-purple: 196 181 214;
-    --emotional-pink: 246 213 221; 
-    --emotional-peach: 255 238 226;
-    --emotional-sage: 198 219 199;
-    --emotional-lavender: 230 220 240;
+    /* Custom emotional capacity colors - improved contrast */
+    --emotional-purple: 168 139 173;
+    --emotional-pink: 226 183 201; 
+    --emotional-sage: 158 189 169;
+    --emotional-lavender: 200 180 220;
     --emotional-cream: 254 251 248;
+    --emotional-warm: 210 170 180;
   }
 
   .dark {
@@ -86,15 +86,15 @@
 @layer utilities {
   .text-emotional-purple { color: rgb(var(--emotional-purple)); }
   .text-emotional-pink { color: rgb(var(--emotional-pink)); }
-  .text-emotional-peach { color: rgb(var(--emotional-peach)); }
   .text-emotional-sage { color: rgb(var(--emotional-sage)); }
   .text-emotional-lavender { color: rgb(var(--emotional-lavender)); }
   .text-emotional-cream { color: rgb(var(--emotional-cream)); }
+  .text-emotional-warm { color: rgb(var(--emotional-warm)); }
   
   .bg-emotional-purple { background-color: rgb(var(--emotional-purple)); }
   .bg-emotional-pink { background-color: rgb(var(--emotional-pink)); }
-  .bg-emotional-peach { background-color: rgb(var(--emotional-peach)); }
   .bg-emotional-sage { background-color: rgb(var(--emotional-sage)); }
   .bg-emotional-lavender { background-color: rgb(var(--emotional-lavender)); }
   .bg-emotional-cream { background-color: rgb(var(--emotional-cream)); }
+  .bg-emotional-warm { background-color: rgb(var(--emotional-warm)); }
 }

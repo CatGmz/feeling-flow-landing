@@ -38,7 +38,7 @@ const HeroSection = () => {
               <div className="absolute inset-0 flex items-center justify-center">
                 <div className="text-center space-y-4">
                   {/* Head */}
-                  <div className="w-16 h-16 bg-emotional-peach rounded-full mx-auto border-4 border-white"></div>
+                  <div className="w-16 h-16 bg-emotional-warm rounded-full mx-auto border-4 border-white"></div>
                   {/* Body/Arms in journaling position */}
                   <div className="w-20 h-12 bg-emotional-purple rounded-full mx-auto"></div>
                   {/* Journal */}
@@ -47,7 +47,7 @@ const HeroSection = () => {
               </div>
               {/* Decorative elements */}
               <div className="absolute top-8 right-8 w-4 h-4 bg-emotional-sage rounded-full animate-soft-pulse"></div>
-              <div className="absolute bottom-12 left-8 w-6 h-6 bg-emotional-peach rounded-full animate-soft-pulse"></div>
+              <div className="absolute bottom-12 left-8 w-6 h-6 bg-emotional-warm rounded-full animate-soft-pulse"></div>
               <div className="absolute top-16 left-12 w-3 h-3 bg-primary rounded-full animate-soft-pulse"></div>
             </div>
           </div>
