@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -15,7 +14,6 @@ const SubscriptionSection = () => {
     e.preventDefault();
     setIsSubmitting(true);
 
-    // Simulate form submission - replace with actual Supabase integration
     setTimeout(() => {
       toast({
         title: "Welcome to the movement! 💜",
@@ -28,17 +26,39 @@ const SubscriptionSection = () => {
   };
 
   return (
-    <section className="py-20 px-4 bg-gradient-to-br from-emotional-pink to-emotional-warm">
+    <section
+      className="py-20 px-4"
+      style={{
+        background: "linear-gradient(to bottom right, #F5D7F9, #E9E2FA)", // rosa pastel claro a lila pastel claro
+      }}
+    >
       <div className="container mx-auto max-w-2xl">
-        <Card className="border-none shadow-2xl bg-white/90 backdrop-blur-sm">
+        <Card
+          className="border-none shadow-2xl"
+          style={{
+            backgroundColor: "rgba(255, 255, 255, 0.85)", // blanco con transparencia suave
+            backdropFilter: "blur(10px)",
+          }}
+        >
           <CardContent className="p-12">
             <div className="text-center space-y-8">
               <div className="space-y-4">
-                <h2 className="text-3xl md:text-4xl font-light text-foreground">
+                <h2
+                  className="text-3xl md:text-4xl font-light"
+                  style={{ color: "#6B5E7B" }} // morado grisáceo suave
+                >
                   Join the{" "}
-                  <span className="text-primary font-medium">movement</span>
+                  <span
+                    className="font-medium"
+                    style={{ color: "#CFC1F8" }} // lila pastel
+                  >
+                    movement
+                  </span>
                 </h2>
-                <p className="text-lg text-muted-foreground leading-relaxed">
+                <p
+                  className="text-lg leading-relaxed"
+                  style={{ color: "#8B8195" }} // gris violeta suave
+                >
                   Get updates, early access to the Emotional Capacity Kit, and invitations to our community events.
                 </p>
               </div>
@@ -51,7 +71,21 @@ const SubscriptionSection = () => {
                     value={name}
                     onChange={(e) => setName(e.target.value)}
                     required
-                    className="rounded-full px-6 py-3 border-2 border-emotional-lavender focus:border-primary transition-colors"
+                    className="rounded-full px-6 py-3 transition-colors placeholder:text-primary"
+                    style={{
+                      backgroundColor: "white",
+                      color: "#6B5E7B",
+                      borderWidth: "2px",
+                      borderColor: "#D7C9F3", // borde lila pastel
+                    }}
+                    onFocus={(e) => {
+                      e.currentTarget.style.borderColor = "#CFC1F8"; // borde lila más intenso al enfocar
+                      e.currentTarget.style.backgroundColor = "white";
+                    }}
+                    onBlur={(e) => {
+                      e.currentTarget.style.borderColor = "#D7C9F3";
+                      e.currentTarget.style.backgroundColor = "white";
+                    }}
                   />
                   <Input
                     type="email"
@@ -59,14 +93,32 @@ const SubscriptionSection = () => {
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
                     required
-                    className="rounded-full px-6 py-3 border-2 border-emotional-lavender focus:border-primary transition-colors"
+                    className="rounded-full px-6 py-3 transition-colors placeholder:text-primary"
+                    style={{
+                      backgroundColor: "white",
+                      color: "#6B5E7B",
+                      borderWidth: "2px",
+                      borderColor: "#D7C9F3",
+                    }}
+                    onFocus={(e) => {
+                      e.currentTarget.style.borderColor = "#CFC1F8";
+                      e.currentTarget.style.backgroundColor = "white";
+                    }}
+                    onBlur={(e) => {
+                      e.currentTarget.style.borderColor = "#D7C9F3";
+                      e.currentTarget.style.backgroundColor = "white";
+                    }}
                   />
                 </div>
-                
-                <Button 
+
+                <Button
                   type="submit"
                   disabled={isSubmitting}
-                  className="w-full bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-4 text-lg rounded-full transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl"
+                  className="w-full px-8 py-4 text-lg rounded-full transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl"
+                  style={{
+                    backgroundColor: "#CFC1F8", // lila pastel
+                    color: "white",
+                  }}
                 >
                   {isSubmitting ? "Joining..." : "I'm in"}
                 </Button>
