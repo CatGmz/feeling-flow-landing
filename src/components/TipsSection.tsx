@@ -24,17 +24,17 @@ const TipsSection = () => {
   };
 
   return (
-    <section className="py-20 px-4" style={{ backgroundColor: "#FEFBF8" }}>
+    <section className="py-20 px-4" style={{ backgroundColor: "#FEFBF8" }} id="tip-section">
       <div className="container mx-auto max-w-6xl">
-        <div className="mb-10">
-          <h2
-            className="text-3xl font-bold text-center mb-4"
-            style={{ color: "#8A71AD" }}
-          >
-            Tips & Resources
+        <div className="mb-10 text-center">
+          <h2 className="text-3xl md:text-5xl font-light mb-6" style={{ color: "rgb(75, 65, 82)" }}>
+            Tips {" "}
+            <span style={{ color: '#A88BAD', fontWeight: 500 }}>
+              and Resources
+            </span>
           </h2>
           <p
-            className="text-center max-w-2xl mx-auto"
+            className="text-center max-w-2xl mx-auto text-lg md:text-xl"
             style={{ color: "#73697A" }}
           >
             Search for helpful tips and resources to improve your emotional

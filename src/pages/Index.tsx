@@ -14,7 +14,7 @@ const Index = () => {
       <KitSection />
       <CommunitySection />
       <QuoteSection />
-      <SubscriptionSection />
+      <SubscriptionSection backgroundColor="linear-gradient(to bottom right, #F5D7F9, #E9E2FA)" />
     </div>
   );
 };

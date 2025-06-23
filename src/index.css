@@ -44,6 +44,8 @@
     --emotional-lavender: 200 180 220;
     --emotional-cream: 254 251 248;
     --emotional-warm: 210 170 180;
+    --gradient-emotional-pastel: linear-gradient(to bottom right, #F5D7F9, #E9E2FA);
+    --gradient-emotional-warm: linear-gradient(to bottom right, #F9E2D7, #F5D7F9);
   }
 
   .dark {
@@ -97,4 +99,6 @@
   .bg-emotional-lavender { background-color: rgb(var(--emotional-lavender)); }
   .bg-emotional-cream { background-color: rgb(var(--emotional-cream)); }
   .bg-emotional-warm { background-color: rgb(var(--emotional-warm)); }
+  .bg-gradient-emotional-pastel { background: var(--gradient-emotional-pastel); }
+
 }

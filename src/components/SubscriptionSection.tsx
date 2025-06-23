@@ -4,7 +4,11 @@ import { Input } from "@/components/ui/input";
 import { Card, CardContent } from "@/components/ui/card";
 import { useToast } from "@/hooks/use-toast";
 
-const SubscriptionSection = () => {
+interface SubscriptionSectionProps {
+  backgroundColor: string; 
+}
+
+const SubscriptionSection = ({ backgroundColor }: SubscriptionSectionProps) => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -29,7 +33,7 @@ const SubscriptionSection = () => {
     <section
       className="py-20 px-4"
       style={{
-        background: "linear-gradient(to bottom right, #F5D7F9, #E9E2FA)", // rosa pastel claro a lila pastel claro
+        background: backgroundColor, // rosa pastel claro a lila pastel claro
       }}
     >
       <div className="container mx-auto max-w-2xl">

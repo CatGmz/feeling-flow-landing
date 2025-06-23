@@ -1,6 +1,8 @@
 import Navbar from "@/components/Navbar";
 import ForumTitle from "@/components/ForumTitle";
 import TipsSection from "@/components/TipsSection";
+import EventsSection from "@/components/EventsSection";
+import SubscriptionSection from "@/components/SubscriptionSection";
 
 const Foro = () => {
   return (
@@ -8,6 +10,8 @@ const Foro = () => {
       <Navbar />
       <ForumTitle />
       <TipsSection />
+      <EventsSection />
+      <SubscriptionSection backgroundColor="#FEFBF8" />
     </>
   );
 };
