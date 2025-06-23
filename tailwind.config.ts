@@ -12,6 +12,13 @@ export default {
 	],
 	prefix: "",
 	theme: {
+		screens: {
+			"max-sm": { max: "640px" },
+			"sm": "640px",
+			"md": "768px",
+			"max-md": { max: "768px" },
+			"lg": "1024px",
+		},
 		container: {
 			center: true,
 			padding: '2rem',

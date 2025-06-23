@@ -9,16 +9,16 @@ const ForoTitle = () => {
   return (
     <>
       <section
-        className="min-h-screen flex items-center justify-center px-4 py-16"
+        className="min-h-screen flex items-center justify-center px-4 py-16 max-sm:pt-[100px]"
         style={{
           background: "linear-gradient(to bottom right, #FEFBF8, #C8B4DC)",
         }}
       >
-        <div className="container mx-auto max-w-6xl grid md:grid-cols-2 gap-12 items-center">
+        <div className="container mx-auto max-w-6xl grid md:grid-cols-2 gap-12 items-center max-md:grid-cols-1">
           <div className="space-y-8 animate-fade-in-up">
             <div className="space-y-6">
               <h1
-                className="text-4xl md:text-6xl font-light leading-tight"
+                className="text-4xl md:text-6xl font-light leading-tight "
                 style={{ color: "#4B4152" }}
               >
                 Forum{" "}
