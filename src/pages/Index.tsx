@@ -4,7 +4,7 @@ import KitSection from "@/components/KitSection";
 import CommunitySection from "@/components/CommunitySection";
 import QuoteSection from "@/components/QuoteSection";
 import SubscriptionSection from "@/components/SubscriptionSection";
-import Navbar from "@/components/navbar";
+import Navbar from "@/components/Navbar";
 
 const Index = () => {
   return (
