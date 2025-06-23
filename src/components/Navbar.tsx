@@ -21,10 +21,10 @@ const Navbar = () => {
 
         <div className="navbar-links">
           <Link
-            to="/foro"
-            className={linkActivo("/foro")}
+            to="/forum"
+            className={linkActivo("/forum")}
           >
-            Foro
+            Forum
           </Link>
           <Link
             to="/kit"
