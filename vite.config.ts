@@ -5,7 +5,7 @@ import { componentTagger } from "lovable-tagger";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
-  base: 'https://catgmz.github.io/feeling-flow-landing',
+  base: '/feeling-flow-landing',
   server: {
     host: "::",
     port: 8080,
