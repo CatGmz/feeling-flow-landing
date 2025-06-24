@@ -4,7 +4,7 @@ import { Menu, X } from 'lucide-react';
 import "../styles/navbar.css";
 import "../index.css";
 
-const logo = "/favicon.ico";
+
 
 const Navbar = () => {
   const location = useLocation();
@@ -23,7 +23,7 @@ const Navbar = () => {
     <div className="navbar-container">
       <div className="navbar-content">
         <Link to="/" className="navbar-logo">
-          <img src={logo} alt="Feeling Flow" />
+          <img src="./favicon.ico" alt="Feeling Flow" />
         </Link>
 
         <button className="navbar-hamburger" onClick={handleMenuToggle}>
