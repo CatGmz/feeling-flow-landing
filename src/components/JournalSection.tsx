@@ -1,24 +1,47 @@
-const PlushSection = () => {
+const JournalSection = () => {
     return (
         <section
             className="py-20 px-4"
-            style={{ backgroundColor: '#FEFBF8' }} // fondo beige
+            style={{ background: 'linear-gradient(to bottom right, #E9E2FA, #C8B4DC)' }} // fondo lila pastel
         >
             <div className="container mx-auto max-w-6xl">
                 <div className="grid md:grid-cols-2 gap-12 items-center">
-                    {/* Imagen del oso de peluche con animación flotante */}
+                    {/* Contenido de texto */}
+                    <div className="space-y-8 animate-fade-in-up">
+                        <div className="space-y-6">
+                            <h2
+                                className="text-3xl md:text-5xl font-light leading-tight"
+                                style={{ color: "#4B4152" }}
+                            >
+                                The{" "}
+                                <span className="font-medium" style={{ color: "#8A71AD" }}>
+                                    Journal
+                                </span>
+                            </h2>
+                            <p
+                                className="text-lg md:text-xl leading-relaxed"
+                                style={{ color: "#73697A" }}
+                            >
+                                A space to reflect, release, and reconnect. No rules, just pages waiting for your thoughts. 
+                                This journal is designed to help you process emotions, track your journey, and find clarity 
+                                through the simple act of writing.
+                            </p>
+                        </div>
+                    </div>
+
+                    {/* Imagen del journal con animación flotante */}
                     <div className="flex justify-center">
                         <div className="relative">
                             <div
                                 className="w-96 h-96 rounded-full relative overflow-hidden shadow-2xl animate-gentle-float"
-                                style={{ background: 'linear-gradient(to bottom right, #FFFFFF, #E2B7C9)' }} // degradado blanco a rosado pastel
+                                style={{ background: 'linear-gradient(to bottom right, #FFFFFF, #C8B4DC)' }} // degradado blanco a lila pastel
                             >
                                 <div className="absolute inset-0 flex items-center justify-center">
                                     <div className="text-center space-y-4">
-                                        {/* Oso de peluche con imagen SVG */}
+                                        {/* Journal con imagen SVG */}
                                         <img
-                                            src="./plush.svg"
-                                            alt="Teddy Bear Plush"
+                                            src="./journal.svg"
+                                            alt="Emotional Journal"
                                             className="w-80 h-80 object-contain animate-gentle-float"
                                         />
                                     </div>
@@ -40,33 +63,10 @@ const PlushSection = () => {
                             </div>
                         </div>
                     </div>
-
-                    {/* Contenido de texto */}
-                    <div className="space-y-8 animate-fade-in-up">
-                        <div className="space-y-6">
-                            <h2
-                                className="text-3xl md:text-5xl font-light leading-tight"
-                                style={{ color: "#4B4152" }}
-                            >
-                                The{" "}
-                                <span className="font-medium" style={{ color: "#8A71AD" }}>
-                                    Plush
-                                </span>
-                            </h2>
-                            <p
-                                className="text-lg md:text-xl leading-relaxed"
-                                style={{ color: "#73697A" }}
-                            >
-                                This is a teddy bear stuffed with sunflower seeds and soursop that helps you calm down. 
-                                A soft companion for heavy days, designed to provide comfort and emotional support 
-                                through its gentle weight and natural materials.
-                            </p>
-                        </div>
-                    </div>
                 </div>
             </div>
         </section>
     );
 }
 
-export default PlushSection;
+export default JournalSection; 
