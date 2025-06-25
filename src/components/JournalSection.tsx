@@ -64,6 +64,134 @@ const JournalSection = () => {
                         </div>
                     </div>
                 </div>
+
+                {/* Sección de modo de uso */}
+                <div className="mt-20">
+                    <div className="text-center space-y-6 mb-16">
+                        <h3
+                            className="text-2xl md:text-4xl font-light"
+                            style={{ color: "#4B4152" }}
+                        >
+                            How to{" "}
+                            <span className="font-medium" style={{ color: "#8A71AD" }}>
+                                use it
+                            </span>
+                        </h3>
+                        <p
+                            className="text-lg max-w-3xl mx-auto leading-relaxed"
+                            style={{ color: "#73697A" }}
+                        >
+                            This journal serves as a "Destroy This Journal" - a creative space for meditation, therapy, 
+                            mindfulness exercises, yoga, breathing, and artistic activities. No rules, just expression.
+                        </p>
+                    </div>
+
+                    <div className="grid md:grid-cols-2 gap-8">
+                        {/* Recuadro 1: Meditación y Mindfulness */}
+                        <div
+                            className="p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
+                            style={{ backgroundColor: "#E2B7C9" }}
+                        >
+                            <div className="text-center space-y-6">
+                                <div className="text-6xl animate-gentle-float">
+                                    🧘‍♀️
+                                </div>
+                                <h4
+                                    className="text-xl font-medium"
+                                    style={{ color: "#4B4152" }}
+                                >
+                                    Meditation & Mindfulness
+                                </h4>
+                                <p
+                                    className="leading-relaxed"
+                                    style={{ color: "#73697A" }}
+                                >
+                                    Use the journal for guided meditation prompts, mindfulness exercises, and breathing techniques. 
+                                    Write down your thoughts, draw mandalas, or simply breathe and observe your emotions 
+                                    as they flow onto the pages.
+                                </p>
+                            </div>
+                        </div>
+
+                        {/* Recuadro 2: Actividades creativas */}
+                        <div
+                            className="p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
+                            style={{ backgroundColor: "#C8B4DC" }}
+                        >
+                            <div className="text-center space-y-6">
+                                <div className="text-6xl animate-gentle-float">
+                                    🎨
+                                </div>
+                                <h4
+                                    className="text-xl font-medium"
+                                    style={{ color: "#4B4152" }}
+                                >
+                                    Creative Activities
+                                </h4>
+                                <p
+                                    className="leading-relaxed"
+                                    style={{ color: "#73697A" }}
+                                >
+                                    Draw, scribble, paint, or tear pages. Burn this page, scratch it, fold it, 
+                                    or cover it with stickers. This journal is meant to be destroyed and transformed 
+                                    as you process your emotions through art.
+                                </p>
+                            </div>
+                        </div>
+
+                        {/* Recuadro 3: Terapia y liberación */}
+                        <div
+                            className="p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
+                            style={{ backgroundColor: "#D2AAA4" }}
+                        >
+                            <div className="text-center space-y-6">
+                                <div className="text-6xl animate-gentle-float">
+                                    💭
+                                </div>
+                                <h4
+                                    className="text-xl font-medium"
+                                    style={{ color: "#4B4152" }}
+                                >
+                                    Therapy & Release
+                                </h4>
+                                <p
+                                    className="leading-relaxed"
+                                    style={{ color: "#73697A" }}
+                                >
+                                    Write your deepest thoughts, fears, and dreams. Cross out what no longer serves you, 
+                                    tear out pages that hold painful memories, or burn them as a symbolic release. 
+                                    This is your safe space for emotional processing.
+                                </p>
+                            </div>
+                        </div>
+
+                        {/* Recuadro 4: Yoga y respiración */}
+                        <div
+                            className="p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
+                            style={{ backgroundColor: "#9EBDA9" }}
+                        >
+                            <div className="text-center space-y-6">
+                                <div className="text-6xl animate-gentle-float">
+                                    🧘‍♂️
+                                </div>
+                                <h4
+                                    className="text-xl font-medium"
+                                    style={{ color: "#4B4152" }}
+                                >
+                                    Yoga & Breathing
+                                </h4>
+                                <p
+                                    className="leading-relaxed"
+                                    style={{ color: "#73697A" }}
+                                >
+                                    Document your yoga journey, breathing exercises, and body sensations. Draw your breath patterns, 
+                                    write about how poses make you feel, or create visual guides for your practice. 
+                                    Let the journal become part of your movement and breath work.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
     );

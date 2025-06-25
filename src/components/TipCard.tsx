@@ -17,7 +17,7 @@ const TipCard = ({ id, title, description, body, image, date, tags }: Tip) => {
 
   return (
     <>
-      <div className="container mx-auto max-w-2xl p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 flex flex-col h-full">
+      <div className="container mx-auto max-w-2xl p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 flex flex-col h-full" style={{ backgroundColor: '#FEFBF8' }}>
         <div className="flex-grow flex flex-col justify-between mb-4">
           <h2
             className="text-2xl font-semibold mb-6 text-center"

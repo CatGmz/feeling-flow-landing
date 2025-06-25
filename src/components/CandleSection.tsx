@@ -1,24 +1,24 @@
-const PlushSection = () => {
+const CandleSection = () => {
     return (
         <section
             className="py-20 px-4"
-            style={{ backgroundColor: '#FEFBF8' }} // fondo beige
+            style={{ backgroundColor: '#FEFBF8' }} // fondo claro
         >
             <div className="container mx-auto max-w-6xl">
                 <div className="grid md:grid-cols-2 gap-12 items-center">
-                    {/* Imagen del oso de peluche con animación flotante */}
+                    {/* Imagen de la vela con animación flotante */}
                     <div className="flex justify-center">
                         <div className="relative">
                             <div
                                 className="w-96 h-96 rounded-full relative overflow-hidden shadow-2xl animate-gentle-float"
-                                style={{ background: 'linear-gradient(to bottom right, #FFFFFF, #E2B7C9)' }} // degradado blanco a rosado pastel
+                                style={{ background: 'linear-gradient(to bottom right, #FFFFFF, #D2AAA4)' }} // degradado blanco a beige cálido
                             >
                                 <div className="absolute inset-0 flex items-center justify-center">
                                     <div className="text-center space-y-4">
-                                        {/* Oso de peluche con imagen SVG */}
+                                        {/* Vela con imagen SVG */}
                                         <img
-                                            src="./plush.svg"
-                                            alt="Teddy Bear Plush"
+                                            src="./candle.svg"
+                                            alt="Handcrafted Candle"
                                             className="w-80 h-80 object-contain animate-gentle-float"
                                         />
                                     </div>
@@ -50,16 +50,16 @@ const PlushSection = () => {
                             >
                                 The{" "}
                                 <span className="font-medium" style={{ color: "#8A71AD" }}>
-                                    Plush
+                                    Candle
                                 </span>
                             </h2>
                             <p
                                 className="text-lg md:text-xl leading-relaxed"
                                 style={{ color: "#73697A" }}
                             >
-                                This is a teddy bear stuffed with sunflower seeds and soursop that helps you calm down. 
-                                A soft companion for heavy days, designed to provide comfort and emotional support 
-                                through its gentle weight and natural materials.
+                                Handcrafted with orange and cinnamon, this candle creates an atmosphere of peace and tranquility. 
+                                The warm, soothing aromas help you slow down, breathe deeply, and find your center. 
+                                Each candle is carefully made to provide comfort and emotional grounding.
                             </p>
                         </div>
                     </div>
@@ -81,94 +81,68 @@ const PlushSection = () => {
                             className="text-lg max-w-3xl mx-auto leading-relaxed"
                             style={{ color: "#73697A" }}
                         >
-                            This plush serves primarily as emotional support and can also be heated in the microwave 
-                            for an enhanced comforting experience.
+                            This candle serves to create a tranquil atmosphere. Light it in your space to transform 
+                            any environment into a peaceful sanctuary for relaxation and emotional well-being.
                         </p>
                     </div>
 
                     <div className="grid md:grid-cols-2 gap-8">
-                        {/* Recuadro 1: Apoyo emocional */}
+                        {/* Recuadro 1: Ambiente de relajación */}
                         <div
                             className="p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
                             style={{ backgroundColor: "#E2B7C9" }}
                         >
                             <div className="text-center space-y-6">
                                 <div className="text-6xl animate-gentle-float">
-                                    🤗
+                                    🕯️
                                 </div>
                                 <h4
                                     className="text-xl font-medium"
                                     style={{ color: "#4B4152" }}
                                 >
-                                    Emotional Support
+                                    Relaxation Atmosphere
                                 </h4>
                                 <p
                                     className="leading-relaxed"
                                     style={{ color: "#73697A" }}
                                 >
-                                    Hold the plush close to your chest for comfort during difficult moments. 
-                                    The gentle weight and soft texture provide immediate emotional grounding 
-                                    and a sense of security.
+                                    Light the candle in your living space, bedroom, or meditation area to create 
+                                    an instant atmosphere of calm. The gentle flicker and warm aromas of orange 
+                                    and cinnamon will help you unwind and find peace.
                                 </p>
                             </div>
                         </div>
 
-                        {/* Recuadro 2: Calentar en microondas */}
+                        {/* Recuadro 2: Aromaterapia */}
                         <div
                             className="p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
                             style={{ backgroundColor: "#C8B4DC" }}
                         >
                             <div className="text-center space-y-6">
                                 <div className="text-6xl animate-gentle-float">
-                                    🔥
+                                    🌸
                                 </div>
                                 <h4
                                     className="text-xl font-medium"
                                     style={{ color: "#4B4152" }}
                                 >
-                                    Microwave Heating
+                                    Aromatherapy
                                 </h4>
                                 <p
                                     className="leading-relaxed"
                                     style={{ color: "#73697A" }}
                                 >
-                                    Heat the plush in the microwave for 1-2 minutes for a warm, comforting experience. 
-                                    The natural materials retain heat safely and provide soothing warmth 
-                                    for relaxation and stress relief.
+                                    The natural scents of orange and cinnamon provide therapeutic benefits. 
+                                    Orange promotes joy and energy, while cinnamon offers warmth and comfort. 
+                                    Together, they create a balanced, soothing environment for emotional healing.
                                 </p>
                             </div>
                         </div>
 
-                        {/* Recuadro 3: Uso nocturno */}
+                        {/* Recuadro 3: Meditación y mindfulness */}
                         <div
                             className="p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
                             style={{ backgroundColor: "#D2AAA4" }}
-                        >
-                            <div className="text-center space-y-6">
-                                <div className="text-6xl animate-gentle-float">
-                                    😴
-                                </div>
-                                <h4
-                                    className="text-xl font-medium"
-                                    style={{ color: "#4B4152" }}
-                                >
-                                    Sleep Companion
-                                </h4>
-                                <p
-                                    className="leading-relaxed"
-                                    style={{ color: "#73697A" }}
-                                >
-                                    Place the plush beside you while sleeping for a comforting presence. 
-                                    The natural aromas from the seeds and soursop create a calming environment 
-                                    that promotes better sleep and relaxation.
-                                </p>
-                            </div>
-                        </div>
-
-                        {/* Recuadro 4: Meditación */}
-                        <div
-                            className="p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
-                            style={{ backgroundColor: "#9EBDA9" }}
                         >
                             <div className="text-center space-y-6">
                                 <div className="text-6xl animate-gentle-float">
@@ -178,15 +152,41 @@ const PlushSection = () => {
                                     className="text-xl font-medium"
                                     style={{ color: "#4B4152" }}
                                 >
-                                    Meditation Aid
+                                    Meditation & Mindfulness
                                 </h4>
                                 <p
                                     className="leading-relaxed"
                                     style={{ color: "#73697A" }}
                                 >
-                                    Use the plush during meditation sessions by placing it on your lap or holding it. 
-                                    Focus on its texture and warmth to center your mind and enhance your 
-                                    mindfulness practice.
+                                    Use the candle during meditation sessions or mindfulness practices. 
+                                    Focus on the gentle flame and let the aromas guide your breathing. 
+                                    The candle becomes a focal point for concentration and inner peace.
+                                </p>
+                            </div>
+                        </div>
+
+                        {/* Recuadro 4: Rutina nocturna */}
+                        <div
+                            className="p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
+                            style={{ backgroundColor: "#9EBDA9" }}
+                        >
+                            <div className="text-center space-y-6">
+                                <div className="text-6xl animate-gentle-float">
+                                    😴
+                                </div>
+                                <h4
+                                    className="text-xl font-medium"
+                                    style={{ color: "#4B4152" }}
+                                >
+                                    Evening Ritual
+                                </h4>
+                                <p
+                                    className="leading-relaxed"
+                                    style={{ color: "#73697A" }}
+                                >
+                                    Incorporate the candle into your evening routine to signal the transition 
+                                    from day to night. Light it while reading, journaling, or preparing for sleep. 
+                                    The warm glow and soothing scents will help you relax and prepare for rest.
                                 </p>
                             </div>
                         </div>
@@ -197,4 +197,4 @@ const PlushSection = () => {
     );
 }
 
-export default PlushSection;
+export default CandleSection; 

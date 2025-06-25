@@ -22,9 +22,9 @@ const TipInfoModal = ({ id, onClose }: TipProps) => {
   const tip = getTipById(id);
 
   return (
-    <DialogContent className="sm:max-w-[80%] sm:max-h-[90%] overflow-y-auto">
+    <DialogContent className="sm:max-w-[80%] sm:max-h-[90%] overflow-y-auto" style={{ backgroundColor: '#FEFBF8', borderColor: "#FEFBF8"}}>
       <DialogHeader  className="flex flex-col space-y-1">
-        <div className="w-full h-[300px] mb-4 overflow-hidden border rounded-lg shadow-md">
+        <div className="w-full h-[300px] mb-4 overflow-hidden border rounded-lg shadow-md" style={{ backgroundColor: '#FEFBF8', borderColor: "#FEFBF8"}}>
           <img
             src={tip.image || "/default-tip-image.jpg"}
             className="w-full h-full object-cover"
