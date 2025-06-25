@@ -1,4 +1,3 @@
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -76,8 +75,9 @@
     @apply border-border;
   }
 
-  body {
+  body, html {
     @apply bg-background text-foreground font-sans;
+    background: #FEFBF8 !important;
   }
 
   html {
@@ -101,4 +101,105 @@
   .bg-emotional-warm { background-color: rgb(var(--emotional-warm)); }
   .bg-gradient-emotional-pastel { background: var(--gradient-emotional-pastel); }
 
+}
+
+/* Custom styles for profile tabs */
+[data-state="active"] {
+  background-color: #FCE7F3 !important;
+  color: #8A71AD !important;
+  font-weight: 500;
+}
+
+/* Custom styles for all Select components */
+.SelectTrigger {
+  background-color: #FEFBF8 !important;
+  border-color: #FEFBF8 !important;
+  color: #4B4152 !important;
+}
+
+.SelectContent {
+  background-color: #FEFBF8 !important;
+  border-color: #FEFBF8 !important;
+  color: #4B4152 !important;
+}
+
+.SelectItem {
+  background-color: #FEFBF8 !important;
+  color: #4B4152 !important;
+}
+
+.SelectItem:hover {
+  background-color: #E9E2FA !important;
+  color: #4B4152 !important;
+}
+
+.SelectItem[data-highlighted] {
+  background-color: #E9E2FA !important;
+  color: #4B4152 !important;
+}
+
+.SelectItem[data-state="checked"] {
+  background-color: #E9E2FA !important;
+  color: #4B4152 !important;
+}
+
+/* More specific selectors for Radix UI components */
+[data-radix-select-trigger] {
+  background-color: #FEFBF8 !important;
+  border-color: #FEFBF8 !important;
+  color: #4B4152 !important;
+}
+
+[data-radix-select-content] {
+  background-color: #FEFBF8 !important;
+  border-color: #FEFBF8 !important;
+  color: #4B4152 !important;
+}
+
+[data-radix-select-item] {
+  background-color: #FEFBF8 !important;
+  color: #4B4152 !important;
+}
+
+[data-radix-select-item]:hover {
+  background-color: #E9E2FA !important;
+  color: #4B4152 !important;
+}
+
+[data-radix-select-item][data-highlighted] {
+  background-color: #E9E2FA !important;
+  color: #4B4152 !important;
+}
+
+[data-radix-select-item][data-state="checked"] {
+  background-color: #E9E2FA !important;
+  color: #4B4152 !important;
+}
+
+/* Outline personalizado para los select al estar enfocados */
+.SelectTrigger:focus, [data-radix-select-trigger]:focus {
+  outline: 2px solid #E9E2FA !important;
+  box-shadow: 0 0 0 2px #E9E2FA !important;
+}
+
+/* Placeholder color */
+[data-radix-select-trigger]::placeholder {
+  color: #8B8195 !important;
+}
+
+/* Scrollbar personalizada para los Select */
+.SelectContent, [data-radix-select-content] {
+  scrollbar-width: thin;
+  scrollbar-color: #E9E2FA #FEFBF8;
+}
+.SelectContent::-webkit-scrollbar, [data-radix-select-content]::-webkit-scrollbar {
+  width: 8px;
+  background: #FEFBF8;
+}
+.SelectContent::-webkit-scrollbar-thumb, [data-radix-select-content]::-webkit-scrollbar-thumb {
+  background: #E9E2FA;
+  border-radius: 8px;
+}
+.SelectContent::-webkit-scrollbar-thumb:hover, [data-radix-select-content]::-webkit-scrollbar-thumb:hover {
+  background: #C8B4DC;
 }

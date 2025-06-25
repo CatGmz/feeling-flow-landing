@@ -7,6 +7,8 @@ import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 import Forum from "./pages/Forum";
 import Kit from "./pages/Kit";
+import KitPurchaseSection from "./components/KitPurchaseSection";
+import Profile from "./pages/Profile";
 
 const queryClient = new QueryClient();
 
@@ -20,6 +22,8 @@ const App = () => (
           <Route path="/" element={<Index />} />
           <Route path="/Forum" element={<Forum />} />
           <Route path="/Kit" element={<Kit />} />
+          <Route path="/KitPurchase" element={<KitPurchaseSection  />} />
+          <Route path="/Profile" element={<Profile />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
           

@@ -56,20 +56,21 @@ const EventsSection = () => {
             <div className="w-full">
               <Select onValueChange={handleCityChange} value={selectedCity}>
                 <SelectTrigger
-                  className="w-full border-[#A88BAD] focus:ring-[#A88BAD]"
+                  className="w-full border-[#A88BAD] focus:ring-[#A88BAD] SelectTrigger"
                   style={{
-                    backgroundColor: "rgba(255, 255, 255, 0.8)",
+                    backgroundColor: "#FEFBF8",
+                    borderColor: "#FEFBF8",
                     color: "#6B5E7B",
                   }}
                 >
                   <SelectValue placeholder="Selecciona una ciudad" />
                 </SelectTrigger>
-                <SelectContent style={{ color: "#6B5E7B" }}>
-                  <SelectItem value="all" style={{ color: "#6B5E7B" }}>
+                <SelectContent className="SelectContent" style={{ backgroundColor: "#FEFBF8", borderColor: "#FEFBF8" }}>
+                  <SelectItem value="all" className="SelectItem" style={{ color: "#6B5E7B" }}>
                     Todas las ciudades
                   </SelectItem>
                   {cities.map((city) => (
-                    <SelectItem key={city} value={city.toLowerCase()}>
+                    <SelectItem key={city} value={city.toLowerCase()} className="SelectItem" style={{ color: "#6B5E7B" }}>
                       {city}
                     </SelectItem>
                   ))}

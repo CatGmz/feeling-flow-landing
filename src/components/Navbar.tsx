@@ -43,10 +43,10 @@ const Navbar = () => {
           </div>
 
           <div className="navbar-icons">
-            <Link to="/perfil" className="navbar-icon">
+            <Link to="/profile" className="navbar-icon">
               <i className="user-icon" />
             </Link>
-            <Link to="/carrito" className="navbar-icon">
+            <Link to="/kitpurchase" className="navbar-icon">
               <i className="cart-icon" />
             </Link>
             <button className="logout-btn">
