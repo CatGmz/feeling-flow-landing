@@ -14,10 +14,10 @@ const KitPurchaseSection = () => {
         <div className="min-h-screen">
             <Navbar />
             <section
-                className="py-20 px-4"
+                className="py-20 px-2 md:px-4"
                 style={{ backgroundColor: '#FEFBF8' }}
             >
-                <div className="container mx-auto max-w-6xl">
+                <div className="container mx-auto max-w-6xl w-full px-0 md:px-4">
                     {/* Título de la sección */}
                     <div className="text-center space-y-6 mb-16">
                         <h2
@@ -38,23 +38,20 @@ const KitPurchaseSection = () => {
                         </p>
                     </div>
 
-                    <div className="grid lg:grid-cols-2 gap-12">
+                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 w-full max-w-full">
                         {/* Columna izquierda - Producto y descripción */}
-                        <div className="space-y-8">
+                        <div className="space-y-8 w-full max-w-full">
                             {/* Imagen principal del kit */}
-                            <div className="flex justify-center">
-                                <div className="relative">
+                            <div className="flex justify-center w-full max-w-full">
+                                <div className="relative w-full max-w-full">
                                     <div
-                                        className="w-96 h-96 rounded-2xl relative overflow-hidden shadow-2xl"
-                                        style={{ background: 'linear-gradient(to bottom right, #FFFFFF, #E2B7C9)' }}
+                                        className="w-full rounded-2xl overflow-hidden shadow-2xl mx-auto flex items-center justify-center bg-gradient-to-br from-white to-[#E2B7C9]"
                                     >
-                                        <div className="absolute inset-0 flex items-center justify-center p-8">
-                                            <img
-                                                src="./kit-real.svg"
-                                                alt="Emotional Capacity Kit"
-                                                className="w-full h-full object-contain"
-                                            />
-                                        </div>
+                                        <img
+                                            src="./kit-real.svg"
+                                            alt="Emotional Capacity Kit"
+                                            className="w-full max-w-xs md:max-w-md lg:max-w-lg h-auto object-contain mx-auto"
+                                        />
                                     </div>
                                 </div>
                             </div>
@@ -67,9 +64,9 @@ const KitPurchaseSection = () => {
                                 >
                                     What's included in your kit:
                                 </h3>
-                                <div className="grid grid-cols-3 gap-4">
+                                <div className="grid grid-cols-3 gap-4 w-full max-w-full">
                                     {/* Plush */}
-                                    <div className="text-center space-y-3">
+                                    <div className="text-center space-y-3 w-full">
                                         <div
                                             className="w-20 h-20 rounded-full mx-auto flex items-center justify-center"
                                             style={{ backgroundColor: "#E2B7C9" }}
@@ -86,7 +83,7 @@ const KitPurchaseSection = () => {
                                     </div>
 
                                     {/* Journal */}
-                                    <div className="text-center space-y-3">
+                                    <div className="text-center space-y-3 w-full">
                                         <div
                                             className="w-20 h-20 rounded-full mx-auto flex items-center justify-center"
                                             style={{ backgroundColor: "#C8B4DC" }}
@@ -103,7 +100,7 @@ const KitPurchaseSection = () => {
                                     </div>
 
                                     {/* Candle */}
-                                    <div className="text-center space-y-3">
+                                    <div className="text-center space-y-3 w-full">
                                         <div
                                             className="w-20 h-20 rounded-full mx-auto flex items-center justify-center"
                                             style={{ backgroundColor: "#D2AAA4" }}
@@ -149,9 +146,9 @@ const KitPurchaseSection = () => {
                         </div>
 
                         {/* Columna derecha - Formulario de compra */}
-                        <div className="space-y-8">
-                            <Card className="border-none shadow-xl" style={{ backgroundColor: "rgba(255, 255, 255, 0.9)" }}>
-                                <CardContent className="p-8">
+                        <div className="space-y-8 w-full max-w-full">
+                            <Card className="border-none shadow-xl w-full max-w-full" style={{ backgroundColor: "rgba(255, 255, 255, 0.9)" }}>
+                                <CardContent className="p-4 md:p-8 w-full max-w-full">
                                     {/* Precio */}
                                     <div className="text-center space-y-4 mb-8">
                                         <div className="text-4xl font-light" style={{ color: "#4B4152" }}>

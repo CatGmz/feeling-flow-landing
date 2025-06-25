@@ -1,29 +1,28 @@
 const CandleSection = () => {
     return (
         <section
-            className="py-20 px-4"
+            className="py-20 px-2 md:px-4"
             style={{ backgroundColor: '#FEFBF8' }} // fondo claro
         >
-            <div className="container mx-auto max-w-6xl">
-                <div className="grid md:grid-cols-2 gap-12 items-center">
+            <div className="container mx-auto max-w-6xl w-full">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center w-full">
                     {/* Imagen de la vela con animación flotante */}
-                    <div className="flex justify-center">
-                        <div className="relative">
+                    <div className="flex justify-center w-full">
+                        <div className="relative w-full max-w-xs md:max-w-md lg:max-w-lg">
                             <div
-                                className="w-96 h-96 rounded-full relative overflow-hidden shadow-2xl animate-gentle-float"
-                                style={{ background: 'linear-gradient(to bottom right, #FFFFFF, #D2AAA4)' }} // degradado blanco a beige cálido
+                                className="w-full h-auto rounded-full relative overflow-hidden shadow-2xl animate-gentle-float mx-auto"
+                                style={{ background: 'linear-gradient(to bottom right, #FFFFFF, #D2AAA4)' }}
                             >
-                                <div className="absolute inset-0 flex items-center justify-center">
-                                    <div className="text-center space-y-4">
+                                <div className="flex items-center justify-center w-full h-full">
+                                    <div className="text-center space-y-4 w-full">
                                         {/* Vela con imagen SVG */}
                                         <img
                                             src="./candle.svg"
                                             alt="Handcrafted Candle"
-                                            className="w-80 h-80 object-contain animate-gentle-float"
+                                            className="w-full h-auto max-w-[250px] md:max-w-[320px] lg:max-w-[384px] object-contain animate-gentle-float mx-auto"
                                         />
                                     </div>
                                 </div>
-
                                 {/* Elementos decorativos sutiles */}
                                 <div
                                     className="absolute top-8 right-8 w-4 h-4 rounded-full animate-soft-pulse"
@@ -42,7 +41,7 @@ const CandleSection = () => {
                     </div>
 
                     {/* Contenido de texto */}
-                    <div className="space-y-8 animate-fade-in-up">
+                    <div className="space-y-8 animate-fade-in-up w-full">
                         <div className="space-y-6">
                             <h2
                                 className="text-3xl md:text-5xl font-light leading-tight"
@@ -66,7 +65,7 @@ const CandleSection = () => {
                 </div>
 
                 {/* Sección de modo de uso */}
-                <div className="mt-20">
+                <div className="mt-20 w-full">
                     <div className="text-center space-y-6 mb-16">
                         <h3
                             className="text-2xl md:text-4xl font-light"
@@ -86,14 +85,14 @@ const CandleSection = () => {
                         </p>
                     </div>
 
-                    <div className="grid md:grid-cols-2 gap-8">
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-8 w-full">
                         {/* Recuadro 1: Ambiente de relajación */}
                         <div
-                            className="p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
+                            className="p-6 md:p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 w-full"
                             style={{ backgroundColor: "#E2B7C9" }}
                         >
                             <div className="text-center space-y-6">
-                                <div className="text-6xl animate-gentle-float">
+                                <div className="text-5xl md:text-6xl animate-gentle-float">
                                     🕯️
                                 </div>
                                 <h4
@@ -115,11 +114,11 @@ const CandleSection = () => {
 
                         {/* Recuadro 2: Aromaterapia */}
                         <div
-                            className="p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
+                            className="p-6 md:p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 w-full"
                             style={{ backgroundColor: "#C8B4DC" }}
                         >
                             <div className="text-center space-y-6">
-                                <div className="text-6xl animate-gentle-float">
+                                <div className="text-5xl md:text-6xl animate-gentle-float">
                                     🌸
                                 </div>
                                 <h4
@@ -141,11 +140,11 @@ const CandleSection = () => {
 
                         {/* Recuadro 3: Meditación y mindfulness */}
                         <div
-                            className="p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
+                            className="p-6 md:p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 w-full"
                             style={{ backgroundColor: "#D2AAA4" }}
                         >
                             <div className="text-center space-y-6">
-                                <div className="text-6xl animate-gentle-float">
+                                <div className="text-5xl md:text-6xl animate-gentle-float">
                                     🧘‍♀️
                                 </div>
                                 <h4
@@ -167,11 +166,11 @@ const CandleSection = () => {
 
                         {/* Recuadro 4: Rutina nocturna */}
                         <div
-                            className="p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
+                            className="p-6 md:p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 w-full"
                             style={{ backgroundColor: "#9EBDA9" }}
                         >
                             <div className="text-center space-y-6">
-                                <div className="text-6xl animate-gentle-float">
+                                <div className="text-5xl md:text-6xl animate-gentle-float">
                                     😴
                                 </div>
                                 <h4

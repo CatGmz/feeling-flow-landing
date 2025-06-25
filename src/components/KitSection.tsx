@@ -26,7 +26,7 @@ const KitSection = () => {
   return (
     <section
       id="kit-section"
-      className="py-20 px-4"
+      className="py-20 px-2 md:px-4"
       style={{ backgroundColor: "#FEFBF8" }} // emotional-cream
     >
       <div className="container mx-auto max-w-6xl">
@@ -50,17 +50,17 @@ const KitSection = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 w-full max-w-full">
           {kitItems.map((item, index) => (
             <Card
               key={item.title}
-              className="border-none shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 group"
+              className="border-none shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 group w-full"
               style={{
                 backgroundColor: item.color,
                 animationDelay: `${index * 200}ms`
               }}
             >
-              <CardContent className="p-8 text-center space-y-6">
+              <CardContent className="p-6 md:p-8 text-center space-y-6 w-full">
                 <div className="text-4xl mb-4 group-hover:animate-gentle-float">
                   {item.icon}
                 </div>
